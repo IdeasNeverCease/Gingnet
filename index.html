@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8"/>
+		<title>Gingnet</title>
+
+		<meta name="author" content="NetOperator Wibby"/>
+		<meta name="description" content="Lightweight fuzzy-search, for BattleChips and such."/>
+
+		<style>
+			body {
+				color: rgba(25, 25, 25, 0.95);
+				font-family: "Source Sans Pro", "Open Sans", sans-serif;
+			}
+		</style>
+
+		<script src="scripts/jquery-2.1.1.min.js"></script>
+
+		<script src="scripts/fuse.js"></script>
+		<script src="scripts/gingnet.js"></script>
+
+		<script>
+			var _gauges = _gauges || [];
+
+			(function () {
+
+				var t = document.createElement("script");
+				t.type = "text/javascript";
+				t.async = true;
+				t.id = "gauges-tracker";
+				t.setAttribute("data-site-id", "4f21fccc613f5d5a40000003");
+				t.src = "//secure.gaug.es/track.js";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(t, s);
+
+			})();
+		</script>
+
+	</head>
+
+	<body>
+
+		<h1>Gingnet</h1>
+		<h3>Lightweight fuzzy-search, for BattleChips and such.</h3>
+
+		<div>
+			<input id="inputSearch" placeholder="Search..."/>
+		</div>
+
+		<div>
+			<input id="number" type="checkbox"/>
+			<label for="number">Number</label>
+		</div>
+
+		<div>
+			<input id="name" type="checkbox" checked="true"/>
+			<label for="name">Name</label>
+		</div>
+
+		<div>
+			<input id="rarity" type="checkbox"/>
+			<label for="rarity">Rarity</label>
+		</div>
+
+		<div>
+			<input id="damage" type="checkbox"/>
+			<label for="damage">Damage</label>
+		</div>
+
+		<div>
+			<input id="element" type="checkbox"/>
+			<label for="element">Element</label>
+		</div>
+
+		<div>
+			<input id="description" type="checkbox"/>
+			<label for="description">Description</label>
+		</div>
+
+		<div>
+			<br/>
+			<input id="case" type="checkbox"/>
+			<label for="case">Case sensitive</label>
+		</div>
+
+		<p>The results are sorted by score. That is, the ones that match the strongest are first.</p>
+
+		<ul id="results">
+		</ul>
+
+	</body>
+
+</html>
