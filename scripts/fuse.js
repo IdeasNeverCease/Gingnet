@@ -17,6 +17,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+/* jshint undef: true, unused: true */
+/* global define, module */
+
 (function (global) {
 
 	/**
